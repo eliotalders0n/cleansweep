@@ -51,27 +51,66 @@ function Feed(props) {
           <Col>
             <img
               src="images/2202_w037_n003_175a_p1_175.jpg"
-              style={{ width: "100%", margin: "15% 10%", borderRadius: "50px" }}
+              style={{ width: "50vh", margin: "15% 5%", borderRadius: "50px" }}
             />
           </Col>
         </Row>
-        <ButtonGroup aria-label="Switch" style={{ width: "60%", margin: "-10% 20%", boxShadow:"1px 2px 2px 1px rgba(0,0,0,0.1)"}}>
-          <Button variant="light"><span style={{fontWeight: "600"}}>Location</span> <br/> <span style={{fontSize: "15px"}} className="lead text-muted">Where do you live</span></Button>
-          <Button variant="light"><span style={{fontWeight: "600"}}>Property Type</span> <br/> <span style={{fontSize: "15px"}} className="lead text-muted">Choose your property type</span></Button>
-          <Button variant="light"><span style={{fontWeight: "600"}}>Price</span> <br/> <span style={{fontSize: "15px"}} className="lead text-muted">How much do I pay</span></Button>
-        </ButtonGroup>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ButtonGroup
+            aria-label="Switch"
+            style={{
+              width: "60vh",
+              height: "12vh",
+              margin: "-10% auto",
+              boxShadow: "1px 2px 2px 1px rgba(0,0,0,0.1)",
+            }}
+          >
+            <Button variant="light">
+              <span style={{ fontWeight: "600" }}>Location</span> <br />{" "}
+              <span style={{ fontSize: "15px" }} className="lead text-muted">
+                Where do you live
+              </span>
+            </Button>
+            <Button variant="light">
+              <span style={{ fontWeight: "600" }}>Property Type</span> <br />{" "}
+              <span style={{ fontSize: "15px" }} className="lead text-muted">
+                Choose your property type
+              </span>
+            </Button>
+            <Button variant="light">
+              <span style={{ fontWeight: "600" }}>Price</span> <br />{" "}
+              <span style={{ fontSize: "15px" }} className="lead text-muted">
+                How much do I pay
+              </span>
+            </Button>
+          </ButtonGroup>
+        </div>
       </Container>
 
       <Container className="my-5">
-         <Row>
+        <Row>
           <Col>
-            <h3 className="display-6" style={{color: "lightcoral"}}>What we do</h3>
-            <h2>Our  jobs to clean your home as well as you do.</h2>
+            <h3  className="display-6" style={{ color: "lightcoral", width:"50vh" }}>
+              What we do
+            </h3>
+            <h2>Our jobs to clean your home as well as you do.</h2>
           </Col>
           <Col>
-            <p className="lead my-5"> If you have a very busy job and just don't have the time to clean your home, we are here to help you 24/7 all year round. Schedule a booking now and have some peace of mind</p>
+            <p className="lead my-5">
+              {" "}
+              If you have a very busy job and just don't have the time to clean
+              your home, we are here to help you 24/7 all year round. Schedule a
+              booking now and have some peace of mind
+            </p>
           </Col>
-         </Row>
+        </Row>
       </Container>
     </Container>
   );
